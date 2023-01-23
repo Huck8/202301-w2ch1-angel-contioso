@@ -15,7 +15,8 @@ body {
   margin: 5rem auto;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  min-width: 300px;
+  padding: 2rem;
 }
 
 .container-banner__img {
@@ -29,6 +30,9 @@ body {
   background-image: url(img/image-header-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  /*  background: rgb(56, 47, 222);
+  background: linear-gradient(rgb(149, 22, 216, 3)),
+    url(img/image-header-mobile.jpg); */
 }
 
 .container-banner__img img {
@@ -37,7 +41,7 @@ body {
 
 .container-banner__info {
   background: hsl(244, 38%, 16%);
-  padding: 3rem 3rem;
+  padding: 3rem 0rem;
 }
 
 .container-banner__title {
