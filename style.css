@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: white;
+  background: hsl(233, 47%, 7%);
+}
+
+.container-banner {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.container-banner__img {
+  margin: 0 auto;
+  height: 200px;
+}
+
+.container-banner__img-test {
+  display: flex;
+  min-height: 290px;
+  background-image: url(img/image-header-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-banner__img img {
+  filter: hsl(277, 64%, 61%);
+}
+
+.container-banner__info {
+  background: hsl(244, 38%, 16%);
+  padding: 3rem 3rem;
+}
+
+.container-banner__title {
+  text-align: center;
+  color: white;
+}
+
+.container-banner__title span {
+  color: hsl(277, 64%, 61%);
+}
+
+.container-banner__info p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter";
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+}
+
+.container-company__numbers {
+  text-align: center;
+  font-family: "Lexend Deca";
+}
+
+.container-company__numbers li {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1.3rem 0;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container-company__data div:first-child {
+  color: hsl(0, 0%, 100%);
+}
+
+.container-company__data div:nth-child(2) {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .container-banner {
+    flex-direction: row;
+  }
+
+  .container-banner {
+    width: 100%;
+  }
+
+  .container-banner__img-test {
+    display: flex;
+    max-width: 900px;
+    min-width: 400px;
+    height: auto;
+    order: 2;
+  }
+
+  .container-banner__info .container-banner__title {
+    text-align: left;
+  }
+  .container-banner__info p {
+    padding: 1rem 0rem;
+    text-align: left;
+  }
+
+  ul.container-company__numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-banner__info {
+    padding: 5rem 8rem;
+    min-height: 350px;
+  }
+}
